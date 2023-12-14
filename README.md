@@ -1,6 +1,6 @@
 Project BanhMiOi
 
-https://banh-mi-oi.vercel.app/pages/ve-chung-toi/ve-chung-toi.html
+[https://banh-mi-oi.vercel.app/pages/ve-chung-toi/ve-chung-toi.html](https://banh-mi-oi.vercel.app/index.html)
 
 Đây là đồ án môn Internet & Công nghệ Web của nhóm
 
