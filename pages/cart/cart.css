@@ -1,0 +1,277 @@
+/* Header */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  height: 100%;
+  width: 100%;
+
+  .header_content {
+    & nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      overflow: hidden;
+      background-color: #333;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+    }
+
+    & .nav_content {
+      display: flex;
+      list-style: none;
+      overflow: hidden;
+    }
+
+    & .nav_login {
+      display: flex;
+      list-style: none;
+      overflow: hidden;
+    }
+
+    & .nav_logo img {
+      max-width: 100%;
+      max-height: 50px;
+    }
+
+    & li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    & li a:hover {
+      background-color: #111;
+    }
+  }
+}
+
+.main {
+  padding: 16px;
+  margin-top: 50px;
+  min-height: 800px;
+}
+
+.left {
+  margin-top: 80px;
+  width: 60%;
+  float: left;
+  height: 100%;
+}
+
+.right {
+  margin-top: 80px;
+  width: 40%;
+  float: left;
+  height: 100%;
+}
+
+form {
+  margin-top: 100px;
+  width: 60%;
+}
+
+/* Full-width inputs */
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 20px 0;
+  border: 1px solid #ccc;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #ee3c27;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  width: 50%;
+}
+
+button:disabled,
+button[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.item-img {
+  width: 200px;
+  height: 150px;
+}
+
+.cart-products {
+  width: 80%;
+  height: auto;
+  border-radius: 3px;
+}
+
+.cart-products .product-rows {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.cart-products .product-rows .product-row {
+  display: flex;
+  height: 80px;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 4rem;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.cart-products .product-rows .product-row .item-info {
+  display: flex;
+  gap: 1rem;
+  font-weight: 500;
+}
+
+.cart-products
+  .product-rows
+  .product-row
+  .item-info
+  .item-img-container
+  .item-img {
+  width: 100px;
+  height: 100%;
+  border-radius: 10%;
+  border: 2px solid #fcba03;
+}
+
+.cart-products .product-rows .product-row .item-info .item-name-item-price {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: normal;
+  justify-content: center;
+  gap: 10px;
+  width: 250px;
+}
+
+.cart-products
+  .product-rows
+  .product-row
+  .item-info
+  .item-name-item-price
+  .item-name {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.cart-products .product-rows .product-row .item-info .item-price {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #717273;
+}
+
+.cart-products .product-rows .product-row .quantity {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+
+.cart-products .product-rows .product-row .no-of-quantity {
+  font-weight: 600;
+  border: none;
+  outline: none;
+  color: #717273;
+}
+
+.cart-products .product-rows .product-row .item-price-sum {
+  margin-left: auto;
+}
+
+.cart-products .product-rows .product-row .item-price-sum h5 {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.right .label {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.right button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.right .total {
+  display: flex;
+  width: 100%;
+  justify-content: left;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.right .total h2 {
+  font-size: 1.1rem;
+}
+
+.right .total .total-price {
+  padding: 0.5rem;
+  border-radius: 3px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 5em 1em;
+  color: #ffffff;
+  background-image: url("/img/index/footer.webp");
+  background-size: cover;
+
+  .footer_item:nth-child(1) {
+    width: 30%;
+  }
+
+  .footer_signup {
+    width: 100%;
+  }
+
+  & h1 {
+    margin-top: 1.5em;
+    color: #ed3c28;
+    font-weight: 1000;
+  }
+}

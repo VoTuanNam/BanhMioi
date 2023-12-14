@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thông tin liên hệ</title>
+    <link rel="stylesheet" href="./lien-he.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Oswald:wght@200&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+
+  <body>
+    <header id="header"></header>
+    <div class="banner-page-header">
+      <img
+        src="//theme.hstatic.net/200000392523/1000896443/14/pagecontact_banner_head.jpg?v=104"
+        alt="Liên hệ"
+      />
+    </div>
+    <div class="container">
+      <div class="box-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62701.28739201395!2d106.70348222410146!3d10.824283067672877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527587e9ad5bf%3A0xafa66f9c8be3c91!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgVGjDtG5nIHRpbiAtIMSQSFFHIFRQLkhDTQ!5e0!3m2!1svi!2s!4v1695281601788!5m2!1svi!2s"
+          width="700"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="wrapbox-content-page-contact">
+        <div class="header-page-contact clearfix">
+          <h1>Liên hệ</h1>
+        </div>
+        <div class="box-info-contact">
+          <ul class="list-info">
+            <li>
+              <p>Địa chỉ chúng tôi</p>
+              <p>
+                <strong
+                  >Đường Hàn Thuyên, Khu phố 6, Linh Trung, TP Thủ Đức, TP. Hồ
+                  Chí Minh</strong
+                >
+              </p>
+            </li>
+            <li>
+              <p>Email chúng tôi</p>
+              <p><strong>support@Ambitio.vn</strong></p>
+            </li>
+            <li>
+              <p>Điện thoại</p>
+              <p><strong>08 577 21177</strong></p>
+            </li>
+            <li>
+              <p>Thời gian làm việc</p>
+              <p>
+                <strong
+                  >Thứ 2 - thứ 6: 8h - 17h30; Thứ 7: 8h - 12h, ngoại trừ ngày
+                  Lễ, Tết</strong
+                >
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="box-send-contact">
+          <h2>Gửi thắc mắc cho chúng tôi</h2>
+          <div id="col-left contactFormWrapper">
+            <form
+              accept-charset="UTF-8"
+              action="/contact"
+              class="contact-form"
+              method="post"
+            >
+              <input name="form_type" type="hidden" value="contact" />
+              <input name="utf8" type="hidden" value="✓" />
+
+              <div class="contact-form">
+                <div class="row">
+                  <div class="input-group">
+                    <input
+                      required=""
+                      type="text"
+                      name="contact[name]"
+                      class="form-control"
+                      placeholder="Tên của bạn"
+                      aria-describedby="basic-addon1"
+                    />
+                  </div>
+
+                  <div class="input-group">
+                    <input
+                      required=""
+                      type="text"
+                      name="contact[email]"
+                      class="form-control"
+                      placeholder="Email của bạn"
+                      aria-describedby="basic-addon1"
+                    />
+                  </div>
+
+                  <div class="input-group">
+                    <input
+                      pattern="[0-9]{10,12}"
+                      required=""
+                      type="text"
+                      name="contact[phone]"
+                      class="form-control"
+                      placeholder="Số điện thoại của bạn"
+                      aria-describedby="basic-addon1"
+                    />
+                  </div>
+                  <div class="input-group">
+                    <textarea
+                      required=""
+                      name="contact[body]"
+                      placeholder="Nội dung"
+                    ></textarea>
+                    <div class="sitebox-recaptcha mt-3">
+                      This site is protected by reCAPTCHA and the Google
+                      <a
+                        href="https://policies.google.com/privacy"
+                        target="_blank"
+                        rel="noreferrer"
+                        >Privacy Policy</a
+                      >
+                      and
+                      <a
+                        href="https://policies.google.com/terms"
+                        target="_blank"
+                        rel="noreferrer"
+                        >Terms of Service</a
+                      >
+                      apply.
+                    </div>
+                  </div>
+                  <button class="button">
+                    <span> Gửi cho chúng tôi </span>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer id="footer"></footer>
+    <script src="../../header-footer.js"></script>
+    <a href="#" class="backtotop"><i class="fa-solid fa-angle-up"></i></a>
+  </body>
+</html>

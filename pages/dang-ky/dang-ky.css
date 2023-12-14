@@ -1,0 +1,170 @@
+/* Header */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif !important;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  height: 100%;
+  width: 100%;
+
+  .header_content {
+    & nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      overflow: hidden;
+      background-color: #333;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+    }
+
+    & .nav_content {
+      display: flex;
+      list-style: none;
+      overflow: hidden;
+    }
+
+    & .nav_login {
+      display: flex;
+      list-style: none;
+      overflow: hidden;
+    }
+
+    & .nav_logo img {
+      max-width: 100%;
+      max-height: 50px;
+    }
+
+    & li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    & li a:hover {
+      background-color: #111;
+    }
+  }
+}
+
+.main {
+  padding: 16px;
+  margin-top: 50px;
+}
+
+.left {
+  margin-top: 100px;
+  width: 50%;
+  float: left;
+  height: 100%;
+}
+
+.right {
+  width: 50%;
+  float: left;
+  height: 100%;
+}
+
+form {
+  margin-top: 100px;
+  width: 60%;
+}
+
+/* Full-width inputs */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 20px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type="radio"] + label {
+  cursor: pointer;
+  padding-left: 25px;
+  margin: 0 50px 0 0;
+  line-height: normal;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #ee3c27;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+footer {
+  margin-top: 1000px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5em 1em;
+  color: #ffffff;
+  background-image: url("/img/index/footer.webp");
+  background-size: cover;
+  .footer_item:nth-child(1) {
+    width: 30%;
+  }
+
+  .footer_signup {
+    width: 100%;
+  }
+  & h1 {
+    margin-top: 1.5em;
+    color: #ed3c28;
+    font-weight: 1000;
+  }
+}
+
+h1 {
+  text-align: center;
+}
+
+form p {
+  color: red;
+  padding: 0px 0px 20px 0px;
+}

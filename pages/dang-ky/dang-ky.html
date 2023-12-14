@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Đăng ký</title>
+  <link rel="shortcut icon" href="//theme.hstatic.net/200000392523/1000896443/14/favicon.png?v=104" type="image/png" />
+  <link rel="stylesheet" href="./dang-ky.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<header id="header"></header>
+<div class="main">
+  <div class="left">
+    <h1>Đăng ký</h1>
+    <h1>_________</h1>
+  </div>
+
+  <div class="right">
+    <form id="dang-ky">
+      <label for="fullname"><b>Họ và Tên</b></label>
+      <input id="name" type="text" placeholder="Nhập họ và tên" name="fullname" required />
+      <p id="tbName"></p>
+      <label for="dob"><b>Ngày tháng năm sinh</b></label>
+      <input id="dob"type="text" placeholder="dd/mm/yyyy" name="dob" required />
+      <p id="tbDOB"></p>
+      <div>
+        <input id="radio1" type="radio" value="female" name="gender" />
+        <label for="radio1"><b>Nữ</b></label>
+        <input id="radio2" type="radio" value="male" name="gender" />
+        <label for="radio2"><b>Nam</b></label>
+      </div>
+      <br />
+      <label for="email"><b>Email</b></label>
+      <input id="email" type="text" placeholder="Nhập email" name="email" required />
+      <p id="tbEmail"></p>
+      <label for="email"><b>Số điện thoại</b></label>
+      <input id="phone"type="text" placeholder="Nhập số điện thoại" name="phone" required />
+      <p id="tbPhone"></p>     
+      <label for="uname"><b>Tên tài khoản</b></label>
+      <input id="acc"type="text" placeholder="Nhập tên tài khoản" name="username" required />
+      <p id="tbAcc"></p>
+      <label for="psw"><b>Mật Khẩu</b></label>
+      <input id="password" type="password" placeholder="Mật khẩu" name="password" required />
+      <p id="tbPass"></p>
+      <button type="submit">Đăng ký</button>
+      <span class="psw">
+        <a href="../dang-nhap/dang-nhap.html">Đăng nhập?</a>
+      </span>
+    </form>
+  </div>
+</div>
+<footer id="footer"></footer>
+<script src="./validation.js"></script>
+<script src="./dang-ky.js"></script>
+<script src="../../header-footer.js"></script>
+
+</body>
+
+</html>
